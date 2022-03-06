@@ -126,26 +126,15 @@ var config = {
 			visible: false
 		}),
 		new ol.layer.Tile({
-			title: 'ES_IGN - PNOA - Actual',
-			iconSrc: imgSrc + 'logo_ign.png',
+			title: 'PL_Geoportal',
+			iconSrc: imgSrc + 'geoportalpl.png',
 			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
-				url: 'http://www.ign.es/wms-inspire/pnoa-ma?',
-				params: {'LAYERS': 'PNOA'}
+				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; Geoportal.pl &mdash; Source: Geoportal.pl',
+				url: 'https://mapy.geoportal.gov.pl/wss/service/PZGIK/ORTO/WMS/StandardResolution
+',
+				params: {'LAYERS': 'Raster'}
 			}),
 			visible: false
-		}),
-		
-				new ol.layer.Tile({
-			title: 'ES_CAT_ICGC - Actual',
-			iconSrc: imgSrc + 'logo_icgc.png',
-			source: new ol.source.TileWMS({
-				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; ICGC &mdash; Source: ICGC',
-				url: 'https://geoserveis.icgc.cat/icc_mapesbase/wms/service?',
-				params: {'LAYERS': 'orto25c', 'VERSION': '1.1.1'}
-			}),
-			visible: false
-
 		}),
 
 		new ol.layer.Tile({
@@ -270,7 +259,7 @@ var config = {
 				});
 
 				var stroke = new ol.style.Stroke({
-					color: '#008000',
+					color: 'rgba(0,128,0,0.1)',
 					width: 5
 				});
 				var style = new ol.style.Style({
