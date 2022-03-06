@@ -761,8 +761,8 @@ var config = {
 		{
 			group: 'Test',
 			title: 'Dopomoha',
-			geojson: 'src/zbiorki.json',
-			iconSrc: 'icones/symbols/tourism/information.svg',
+			geojson: 'https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/zbiorki.json',
+			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/icones/symbols/place/place-capital-8.svg',
 			iconStyle: 'background-color:#714601',
 			style: function (feature) {
 				var key_regex = /^name:uk$/
