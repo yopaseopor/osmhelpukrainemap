@@ -21,9 +21,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="0.9175"
-     inkscape:cx="600"
-     inkscape:cy="400"
+     inkscape:zoom="1"
+     inkscape:cx="623.5"
+     inkscape:cy="379"
      inkscape:window-width="1920"
      inkscape:window-height="1027"
      inkscape:window-x="-8"
@@ -41,15 +41,38 @@
      y="400"
      fill="#FFD500"
      id="rect836" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:982.835px;line-height:575.88px;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="343.42499"
-     y="766.21246"
-     id="text3984"><tspan
-       sodipodi:role="line"
-       id="tspan3982"
-       x="343.42499"
-       y="766.21246"
-       style="stroke-width:0.999999px">?</tspan></text>
+  <g
+     id="g12996"
+     transform="matrix(1.1562957,0,0,1.1562957,-143.73082,-106.59241)"
+     style="stroke-width:0.864831" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Layer 1" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2">
+    <g
+       id="g12996-2"
+       transform="matrix(0.02366419,1.1560535,-1.1560535,0.02366419,1086.3765,-360.05342)"
+       style="stroke-width:0.864831">
+      <rect
+         style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:3.26865;stroke-linecap:round;stroke-linejoin:round"
+         id="rect12777-0"
+         width="64.305176"
+         height="748.77386"
+         x="691.93671"
+         y="-546.72864"
+         transform="rotate(45.646811)" />
+    </g>
+    <rect
+       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:3.77953;stroke-linecap:round;stroke-linejoin:round"
+       id="rect12777"
+       width="74.355797"
+       height="865.80402"
+       x="680.47162"
+       y="-630.52057"
+       transform="rotate(45.646811)" />
+  </g>
 </svg>
