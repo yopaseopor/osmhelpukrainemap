@@ -194,8 +194,8 @@ var config = {
 				});
 
 				var stroke = new ol.style.Stroke({
-					color: '#00FF00',
-					width: 1.25
+					color: 'rgba(0,0,255,0.4)',
+					width: 2
 				});
 				var style = new ol.style.Style({
 					image: new ol.style.Circle({
@@ -206,7 +206,7 @@ var config = {
 							text: new ol.style.Text({
 								text: name,
 								color: 'rgba(0,0,255,0.4)',
-								font: '12px Arial bold',
+								font: '14px Arial bold',
 								offsetX : 0,
 								offsetY : 30
 							}),
