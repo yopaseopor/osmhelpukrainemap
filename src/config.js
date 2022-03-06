@@ -7,22 +7,22 @@ var imgSrc = 'src/img/';
 
 var config = {
 	initialConfig: {
-		lon: 1.59647,
-		lat: 41.69689,
+		lon: 23.33386,
+		lat: 49.54416,
 		rotation: 0, //in radians (positive rotation clockwise, 0 means North)
 		zoom: 8,
 		zoomGeolocation: 17,
 		units: 'metric'
 	},
 	i18n: {
-		layersLabel: 'Capes/Layers',
-		editWith: 'Edita:',
-		openWith: 'Obre/Abre/Open:',
-		checkTools: 'Valida:',
-		copyDialog: 'S\'ha copiat l\'enllaç al porta-retalls.Enlace copiado. Link has been copied',
-		nodeLabel: 'Node/Nodo:',
-		noNodesFound: 'No info.',
-		wayLabel: 'Via/Way:'
+		layersLabel: 'Layers/Шари',
+		editWith: 'Edit/Редагувати :',
+		openWith: 'Open/відчинено:',
+		checkTools: 'Valida/Перевірка :',
+		copyDialog: 'посилання скопійовано на шпалери . Link has been copied',
+		nodeLabel: 'Node/Вузол :',
+		noNodesFound: 'No info/Немає інформації .',
+		wayLabel: 'Way/дорога:'
 	},
 	overpassApi: function(){
 		// https://overpass-turbo.eu/
