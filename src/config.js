@@ -183,14 +183,14 @@ var config = {
 			group: 'Name:uk',
 			title: 'Things with name:uk',
 			query: '(node["name:uk"]({{bbox}});node(w);way["name:uk"]({{bbox}});node(w);relation["name:uk"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'accessibilitat/wheelchair_yes.svg',
-			iconStyle: 'background-color:#00FF00',
+			iconSrc: imgSrc + 'flag_ukraine.svg',
+			iconStyle: 'background-color:#FFFFFF',
 			style: function (feature) {
 				var key_regex = /^name:uk$/
 				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
 				var name = feature.get(name_key) || '';
 				var fill = new ol.style.Fill({
-					color: 'rgba(0,255,0,0.4)'
+					color: 'rgba(0,0,255,0.4)'
 				});
 
 				var stroke = new ol.style.Stroke({
@@ -205,8 +205,8 @@ var config = {
 					}),
 							text: new ol.style.Text({
 								text: name,
-								color: 'rgba(0,128,0,0.4)',
-								font: '10px Verdana',
+								color: 'rgba(0,0,255,0.4)',
+								font: '12px Arial bold',
 								offsetX : 0,
 								offsetY : 30
 							}),
