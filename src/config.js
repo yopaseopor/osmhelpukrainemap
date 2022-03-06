@@ -222,7 +222,7 @@ var config = {
 			group: 'Name:uk',
 			title: 'Name:uk node',
 			query: '(node["name:uk"]["name"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'icones_senyera/senyera.svg',
+			iconSrc: imgSrc + 'flag_ukraine.svg',
 			iconStyle: 'background-color:#008000',
 			style: function (feature) {
 				var key_regex = /^name:uk$/
@@ -257,9 +257,9 @@ var config = {
 		},
 		{
 			group: 'Name:uk',
-			title: 'Name:uk via',
+			title: 'Name:uk way',
 			query: '(way["name:uk"]["name"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'icones_senyera/senyera.svg',
+			iconSrc: imgSrc + 'flag_ukraine.svg',
 			iconStyle: 'background-color:#008000',
 			style: function (feature) {
 				var key_regex = /^name:uk$/
@@ -293,9 +293,9 @@ var config = {
 		},
 		{
 			group: 'Name:uk',
-			title: 'Name:uk relació',
+			title: 'Name:uk relation',
 			query: '(relation["name:uk"]({{bbox}});way(r)({{bbox}});node(w););out skel;',
-			iconSrc: imgSrc + 'icones_senyera/senyera.svg',
+			iconSrc: imgSrc + 'flag_ukraine.svg',
 			iconStyle: 'background-color:#008000',
 			style: function (feature) {
 				var key_regex = /^name:uk$/
@@ -329,7 +329,7 @@ var config = {
 		},
 		{
 			group: 'Name:uk',
-			title: 'Sense name:uk node',
+			title: 'No name:uk node',
 			query: '(node[!"name:uk"]["name"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'flag_ukraine_question.svg',
 			iconStyle: 'background-color:#ff0000',
@@ -366,7 +366,7 @@ var config = {
 		},
 		{
 			group: 'Name:uk',
-			title: 'Sense Name:uk via',
+			title: 'No Name:uk way',
 			query: '(way[!"name:uk"]["name"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'flag_ukraine_question.svg',
 			iconStyle: 'background-color:#ff0000',
@@ -402,7 +402,7 @@ var config = {
 		},
 		{
 			group: 'Name:uk',
-			title: 'Sense Name:uk relació',
+			title: 'No Name:uk relation',
 			query: '(relation[!"name:uk"]["name"]({{bbox}});way(r)({{bbox}});node(w););out skel;',
 			iconSrc: imgSrc + 'flag_ukraine_question.svg',
 			iconStyle: 'background-color:#ff0000',
@@ -437,8 +437,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Test',
-			title: 'Sense dades',
+			group: 'Name:uk',
+			title: 'No UK data',
 			query: '(way[highway][!name:uk]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#FF0000',
