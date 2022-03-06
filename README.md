@@ -34,11 +34,11 @@ You can modify the page editing these files:
 
 ### 2-Mapcomplete
 
-Using [Mapcomplete custom quest](https://mapcomplete.osm.be)-[font]-(https://github.com/pietervdvn/MapComplete) to add Ukranianian  language with only necessity of [being user of d'OpenStreetMap](https://www.openstreetmap.org/login).
+Using [Mapcomplete custom quest](https://mapcomplete.osm.be) - [source](https://github.com/pietervdvn/MapComplete) - to add Ukranianian language with the only requirement of [being user of d'OpenStreetMap](https://www.openstreetmap.org/login).
 
 # Agraïments
 To [Comunitat Catalana d'Openstreetmap](https://t.me/osmcat) and [OSM España](https://t.me/osmes) for allowing do these maps, also to the developers who have helped with the project .
 
-## [Map here](https://yopaseopor.github.io/osmhelpukraniamap)
+## [Map here](https://yopaseopor.github.io/osmhelpukrainemap)
 
-## [Mapcomplete query about Help Ukrania](https://mapcomplete.osm.be/theme.html?userlayout=https://raw.githubusercontent.com/yopaseopor/mcquests/main/helpukrania.json)
+## [Mapcomplete query about Help Ukrania](https://mapcomplete.osm.be/theme.html?userlayout=https://raw.githubusercontent.com/yopaseopor/mcquests/main/helpukraine.json)
