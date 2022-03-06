@@ -425,6 +425,43 @@ var config = {
 			}
 		},
 		{
+			group: 'Amenities/об\'єкта ',
+			title: 'Reception points/Прийомні пункти',
+			query: '(node["social_facility"="outreach"]["social_facilty:for"=refugee"]({{bbox}});node(w);way["social_facility"="outreach"]["social_facilty:for"=refugee"]({{bbox}});node(w);relation["social_facility"="outreach"]["social_facilty:for"=refugee"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/symbols/amenity/social_facility.svg',
+			iconStyle: 'background-color:#ffFFFF',
+			style: function (feature) {
+				var key_regex = /^name:uk$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.1)'
+				});
+
+				var stroke = new ol.style.Stroke({
+					color: '#ff0000',
+					width: 0.5
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Circle({
+						fill: fill,
+						stroke: stroke,
+						radius: 5
+					}),
+							text: new ol.style.Text({
+								text: name,
+								color: 'rgba(0,128,0,0.4)',
+								font: '14px Verdana',
+								offsetX : 0,
+								offsetY : 30
+							}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
 			group: 'Name:uk',
 			title: 'No UK data',
 			query: '(way[highway][!name:uk]({{bbox}});node(w););out;',
