@@ -331,7 +331,7 @@ var config = {
 			group: 'Name:uk',
 			title: 'Sense name:uk node',
 			query: '(node[!"name:uk"]["name"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'icones_senyera/senyera_question.svg',
+			iconSrc: imgSrc + 'flag_ukraine_question.svg',
 			iconStyle: 'background-color:#ff0000',
 			style: function (feature) {
 				var key_regex = /^name$/
@@ -368,7 +368,7 @@ var config = {
 			group: 'Name:uk',
 			title: 'Sense Name:uk via',
 			query: '(way[!"name:uk"]["name"]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'icones_senyera/senyera_question.svg',
+			iconSrc: imgSrc + 'flag_ukraine_question.svg',
 			iconStyle: 'background-color:#ff0000',
 			style: function (feature) {
 				var key_regex = /^name$/
@@ -404,7 +404,7 @@ var config = {
 			group: 'Name:uk',
 			title: 'Sense Name:uk relació',
 			query: '(relation[!"name:uk"]["name"]({{bbox}});way(r)({{bbox}});node(w););out skel;',
-			iconSrc: imgSrc + 'icones_senyera/senyera_question.svg',
+			iconSrc: imgSrc + 'flag_ukraine_question.svg',
 			iconStyle: 'background-color:#ff0000',
 			style: function (feature) {
 				var key_regex = /^name$/
