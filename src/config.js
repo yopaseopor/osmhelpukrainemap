@@ -186,7 +186,7 @@ var config = {
 			iconSrc: imgSrc + 'accessibilitat/wheelchair_yes.svg',
 			iconStyle: 'background-color:#00FF00',
 			style: function (feature) {
-				var key_regex = /^name$/
+				var key_regex = /^name:uk$/
 				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
 				var name = feature.get(name_key) || '';
 				var fill = new ol.style.Fill({
