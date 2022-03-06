@@ -130,8 +130,7 @@ var config = {
 			iconSrc: imgSrc + 'geoportalpl.png',
 			source: new ol.source.TileWMS({
 				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; Geoportal.pl &mdash; Source: Geoportal.pl',
-				url: 'https://mapy.geoportal.gov.pl/wss/service/PZGIK/ORTO/WMS/StandardResolution
-',
+				url: 'https://mapy.geoportal.gov.pl/wss/service/PZGIK/ORTO/WMS/StandardResolution',
 				params: {'LAYERS': 'Raster'}
 			}),
 			visible: false
