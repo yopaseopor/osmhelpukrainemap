@@ -650,8 +650,45 @@ var config = {
 		{
 			group: 'Amenities/об\'єкта ',
 			title: 'Doctors/Лікарі',
-			query: '(node["amenity"="doctors"]({{bbox}});node(w);way["amenity"="doctors"]({{bbox}});node(w);relation["amenity"="doctorsl"]({{bbox}});node(w););out meta;',
+			query: '(node["amenity"="doctors"]({{bbox}});node(w);way["amenity"="doctors"]({{bbox}});node(w);relation["amenity"="doctors"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/symbols/amenity/doctors.svg',
+			iconStyle: 'background-color:#ffFFFF',
+			style: function (feature) {
+				var key_regex = /^name:uk$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+
+				var stroke = new ol.style.Stroke({
+					color: '#ff0000',
+					width: 0.5
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Circle({
+						fill: fill,
+						stroke: stroke,
+						radius: 5
+					}),
+							text: new ol.style.Text({
+								text: name,
+								color: 'rgba(0,128,0,0.4)',
+								font: '14px Verdana',
+								offsetX : 0,
+								offsetY : 30
+							}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Amenities/об\'єкта ',
+			title: 'Consultates/консульства',
+			query: '(node["office"="diplomatic"]["country"="UA"]({{bbox}});node(w);way["office"="diplomatic"]["country"="UA"]({{bbox}});node(w);relation["office"="diplomatic"]["country"="UA"]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/symbols/tourism/information.svg',
 			iconStyle: 'background-color:#ffFFFF',
 			style: function (feature) {
 				var key_regex = /^name:uk$/
