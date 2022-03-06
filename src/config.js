@@ -762,57 +762,39 @@ var config = {
 			group: 'Test',
 			title: 'Dopomoha',
 			geojson: 'https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/zbiorki.geojson',
-			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/icones/symbols/place/place-capital-8.svg',
+			iconSrc: imgSrc + 'base/circle.svg',
 			iconStyle: 'background-color:#714601',
 			style: function (feature) {
 				var key_regex = /^name:uk$/
 				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
 				var name = feature.get(name_key) || '';
-				var styles = {
-					'amenity': {
-						'parking': new ol.style.Style({
-							stroke: new ol.style.Stroke({
-								color: 'rgba(170, 170, 170, 1.0)',
-								width: 1
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+
+				var stroke = new ol.style.Stroke({
+					color: '#ff0000',
+					width: 0.5
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Circle({
+						fill: fill,
+						stroke: stroke,
+						radius: 5
+					}),
+							text: new ol.style.Text({
+								text: name,
+								color: 'rgba(0,128,0,0.4)',
+								font: '14px Verdana',
+								offsetX : 0,
+								offsetY : 30
 							}),
-							fill: new ol.style.Fill({
-								color: 'rgba(170, 170, 170, 0.3)'
-							})
-						})
-					},
-						'*': {
-						'.*': new ol.style.Style({
-							image: new ol.style.Icon({
-						scale: 0.4,
-						src: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_R301_50.png'
-							})
-						})
-						
-				},
-					
-					'traffic_sign:backward': {
-						'ES:R2': new ol.style.Style({
-							image: new ol.style.Icon({
-						scale: 0.4,
-						src: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_R2.png'
-					})
-						})
-					}
-				};
-				for (var key in styles) {
-					var value = feature.get(key);
-					if (value !== undefined) {
-						for (var regexp in styles[key]) {
-							if (new RegExp(regexp).test(value)) {
-								return styles[key][regexp];
-							}
-						}
-					}
-				}
-				return null;
-			} 
-		 
-		},
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+    },
 		{
 			group: 'Name:uk',
 			title: 'No UK data',
