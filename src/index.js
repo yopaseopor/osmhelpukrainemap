@@ -342,7 +342,7 @@ $(function () {
 		// Info Control
 	var infoControlBuild2 = function () {
 		var container = $('<div>').addClass('ol-control ol-unselectable osmcat-infobutton2').html($('<button type="button"><i class="fa fa-search-plus"></i></button>').on('click', function () {
-			window.location.href = 'https://mapcomplete.osm.be/index.html?userlayout=https://raw.githubusercontent.com/yopaseopor/mcquests/main/libraries.json';
+			window.location.href = 'https://mapcomplete.osm.be/index.html?userlayout=https://raw.githubusercontent.com/yopaseopor/mcquests/main/helpukraine.json';
 		}));
 		return container[0];
 	};
