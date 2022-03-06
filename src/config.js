@@ -435,7 +435,7 @@ var config = {
 				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
 				var name = feature.get(name_key) || '';
 				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.1)'
+					color: 'rgba(255,0,0,1)'
 				});
 
 				var stroke = new ol.style.Stroke({
@@ -473,7 +473,7 @@ var config = {
 				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
 				var name = feature.get(name_key) || '';
 				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.1)'
+					color: 'rgba(255,0,0,1)'
 				});
 
 				var stroke = new ol.style.Stroke({
@@ -510,7 +510,7 @@ var config = {
 				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
 				var name = feature.get(name_key) || '';
 				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.1)'
+					color: 'rgba(255,0,0,1)'
 				});
 
 				var stroke = new ol.style.Stroke({
@@ -547,7 +547,7 @@ var config = {
 				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
 				var name = feature.get(name_key) || '';
 				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.1)'
+					color: 'rgba(255,0,0,1)'
 				});
 
 				var stroke = new ol.style.Stroke({
