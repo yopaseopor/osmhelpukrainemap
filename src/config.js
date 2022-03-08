@@ -856,7 +856,20 @@ var name = feature.get(name_key) || '';
 								offsetX : 0,
 								offsetY : 30
 					})
-					
+						}),
+						'refugees': new ol.style.Style({
+							image: new ol.style.Icon({
+						scale: 1,
+						src: 'https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/icones/symbols/tourism/office.svg'
+					}),
+							text: new ol.style.Text({
+								text: name,
+								color: 'rgba(0,128,0,0.4)',
+								font: '14px Verdana',
+								offsetX : 0,
+								offsetY : 30
+					})
+						
 						}),
 						'.*': new ol.style.Style({
 							image: new ol.style.Icon({
@@ -1044,7 +1057,7 @@ var name = feature.get(name_key) || '';
 					'name': {
 						'.*': new ol.style.Style({
 							image: new ol.style.Icon({
-						scale: 0.4,
+						scale: 1,
 						src: 'https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/icones/symbols/tourism/office.svg'
 							}),
 							text: new ol.style.Text({
