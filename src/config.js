@@ -843,46 +843,28 @@ var config = {
 				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
 var name = feature.get(name_key) || '';
 				var styles = {
-					'amenity': {
-						'parking': new ol.style.Style({
-							stroke: new ol.style.Stroke({
-								color: 'rgba(170, 170, 170, 1.0)',
-								width: 1
-							}),
-							fill: new ol.style.Fill({
-								color: 'rgba(170, 170, 170, 0.3)'
-							})
-						})
-					},
-					'building': {
-						'.*': new ol.style.Style({
-							zIndex: 100,
-							stroke: new ol.style.Stroke({
-								color: 'rgba(246, 99, 79, 1.0)',
-								width: 1
-							}),
-							fill: new ol.style.Fill({
-								color: 'rgba(246, 99, 79, 0.3)'
-							}),
+					'information:for': {
+						'refugee': new ol.style.Style({
+							image: new ol.style.Icon({
+						scale: 1,
+						src:  'https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/icones/symbols/tourism/office.svg'
+						}),
 							text: new ol.style.Text({
-								text: name
-							})
-						})
-										},
-					'place': {
+								text: name,
+								color: 'rgba(0,128,0,0.4)',
+								font: '14px Verdana',
+								offsetX : 0,
+								offsetY : 30
+					})
+					
+						}),
 						'.*': new ol.style.Style({
-							zIndex: 100,
-							stroke: new ol.style.Stroke({
-								color: 'rgba(246, 99, 79, 1.0)',
-								width: 1
-							}),
-							fill: new ol.style.Fill({
-								color: 'rgba(246, 99, 79, 0.3)'
-							}),
-							text: new ol.style.Text({
-								text: name
+							image: new ol.style.Icon({
+						scale: 0.4,
+						src: 'https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/icones/symbols/place/place-capital-8.svg'
 							})
 						})
+						
 				},
 
 					'consulate': {
@@ -898,29 +880,12 @@ var name = feature.get(name_key) || '';
 								offsetX : 0,
 								offsetY : 30
 					})
-						}),
-						'100': new ol.style.Style({
-							image: new ol.style.Icon({
-						scale: 0.4,
-						src: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_R301_100.png'
-					})
-						}),
-						'80': new ol.style.Style({
-							image: new ol.style.Icon({
-						scale: 0.4,
-						src: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_R301_80.png'
-					})
-						}),
-						'70': new ol.style.Style({
-							image: new ol.style.Icon({
-						scale: 0.4,
-						src: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_R301_70.png'
-					})
+						
 						}),
 						'.*': new ol.style.Style({
 							image: new ol.style.Icon({
 						scale: 0.4,
-						src: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_R301_50.png'
+						src: 'https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/icones/symbols/place/place-capital-8.svg'
 							})
 						})
 						
@@ -942,7 +907,7 @@ var name = feature.get(name_key) || '';
 						'soup_kitchen': new ol.style.Style({
 							image: new ol.style.Icon({
 						scale: 1,
-						src:  'https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/icones/symbols/amenity/cafe.svg'
+						src: 'https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/icones/symbols/amenity/cafe.svg'
 					}),
 							text: new ol.style.Text({
 								text: name,
@@ -964,77 +929,64 @@ var name = feature.get(name_key) || '';
 								offsetX : 0,
 								offsetY : 30
 					})
-						}),
-						'R300': new ol.style.Style({
-							image: new ol.style.Icon({
-						scale: 0.4,
-						src: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_R300.png'
-					})
-												}),
-						'R570': new ol.style.Style({
-							image: new ol.style.Icon({
-						scale: 0.4,
-						src: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_R570.png'
-					})
+						
 						}),
 						'.*': new ol.style.Style({
 							image: new ol.style.Icon({
 						scale: 0.4,
-						src: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_B1a.png'
+						src: 'https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/icones/symbols/place/place-capital-8.svg'
 							})
 						})
 					
 					},
-					'highway': {
-						'residential': new ol.style.Style({
-							stroke: new ol.style.Stroke({
-								color: 'rgba(255, 255, 255, 1.0)',
-								width: 6
-							}),
+					'amenity': {
+						'pharmacy': new ol.style.Style({
+							image: new ol.style.Icon({
+						scale: 1,
+						src: 'https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/icones/symbols/amenity/pharmacy.svg'
+					}),
 							text: new ol.style.Text({
 								text: name,
-								placement: 'line'
-							})
+								color: 'rgba(0,128,0,0.4)',
+								font: '14px Verdana',
+								offsetX : 0,
+								offsetY : 30
+					})
 						}),
-						'living_street': new ol.style.Style({
-							stroke: new ol.style.Stroke({
-								color: 'rgba(255, 255, 255, 1.0)',
-								width: 6
-							}),
+						'doctors': new ol.style.Style({
+							image: new ol.style.Icon({
+						scale: 1,
+						src: 'https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/icones/symbols/amenity/doctors.svg'
+					}),
 							text: new ol.style.Text({
 								text: name,
-								placement: 'line'
-							})
+								color: 'rgba(0,128,0,0.4)',
+								font: '14px Verdana',
+								offsetX : 0,
+								offsetY : 30
+					})
 						}),
-						'pedestrian': new ol.style.Style({
-							stroke: new ol.style.Stroke({
-								color: 'rgba(255, 255, 255, 1.0)',
-								width: 6
-							}),
+						'hospital': new ol.style.Style({
+							image: new ol.style.Icon({
+						scale: 1,
+						src: 'https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/icones/symbols/amenity/hospital.svg'
+					}),
 							text: new ol.style.Text({
 								text: name,
-								placement: 'line'
-							})
-						}),
-						'tertiary': new ol.style.Style({
-							stroke: new ol.style.Stroke({
-								color: 'rgba(255, 255, 255, 1.0)',
-								width: 6
-							}),
-							text: new ol.style.Text({
-								text: name,
-								placement: 'line'
-							})
+								color: 'rgba(0,128,0,0.4)',
+								font: '14px Verdana',
+								offsetX : 0,
+								offsetY : 30
+					})
+						
 						}),
 						'.*': new ol.style.Style({
-							stroke: new ol.style.Stroke({
-								color: 'rgba(255, 255, 255, 1.0)',
-								width: 3
-							}),
-							text: new ol.style.Text({
-								text: name
+							image: new ol.style.Icon({
+						scale: 0.4,
+						src: 'https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/icones/symbols/place/place-capital-8.svg'
 							})
 						})
+					
 					},
 					'landuse': {
 						'forest|grass|allotments': new ol.style.Style({
