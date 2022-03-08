@@ -168,8 +168,8 @@ var config = {
 
 
 		{
-			group: 'Name:uk',
-			title: 'Things with name:uk',
+			group: 'Name:uk/українською мовою',
+			title: 'Things with name:uk/українською мовою',
 			query: '(node["name:uk"]({{bbox}});node(w);way["name:uk"]({{bbox}});node(w);relation["name:uk"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'flag_ukraine.svg',
 			iconStyle: 'background-color:#FFFFFF',
@@ -207,7 +207,7 @@ var config = {
 },
 
 		{
-			group: 'Name:uk',
+			group: 'Name:uk/українською мовою',
 			title: 'Name:uk node',
 			query: '(node["name:uk"]["name"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'flag_ukraine.svg',
@@ -244,7 +244,7 @@ var config = {
 			}
 		},
 		{
-			group: 'Name:uk',
+			group: 'Name:uk/українською мовою',
 			title: 'Name:uk way',
 			query: '(way["name:uk"]["name"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'flag_ukraine.svg',
@@ -280,7 +280,7 @@ var config = {
 			}
 		},
 		{
-			group: 'Name:uk',
+			group: 'Name:uk/українською мовою',
 			title: 'Name:uk relation',
 			query: '(relation["name:uk"]({{bbox}});way(r)({{bbox}});node(w););out skel;',
 			iconSrc: imgSrc + 'flag_ukraine.svg',
@@ -316,7 +316,7 @@ var config = {
 			}
 		},
 		{
-			group: 'Name:uk',
+			group: 'Name:uk/українською мовою',
 			title: 'No name:uk node',
 			query: '(node[!"name:uk"]["name"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'flag_ukraine_question.svg',
@@ -353,7 +353,7 @@ var config = {
 			}
 		},
 		{
-			group: 'Name:uk',
+			group: 'Name:uk/українською мовою',
 			title: 'No Name:uk way',
 			query: '(way[!"name:uk"]["name"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'flag_ukraine_question.svg',
@@ -389,7 +389,7 @@ var config = {
 			}
 		},
 		{
-			group: 'Name:uk',
+			group: 'Name:uk/українською мовою',
 			title: 'No Name:uk relation',
 			query: '(relation[!"name:uk"]["name"]({{bbox}});way(r)({{bbox}});node(w););out skel;',
 			iconSrc: imgSrc + 'flag_ukraine_question.svg',
@@ -425,7 +425,7 @@ var config = {
 			}
 		},
 		{
-			group: 'Amenities/об\'єкта ',
+			group: 'Amenities/об\'єкта',
 			title: 'Reception points/Прийомні пункти',
 			query: '(node["social_facility"="outreach"]["social_facility:for"="refugee"]({{bbox}});node(w);way["social_facility"="outreach"]["social_facility:for"="refugee"]({{bbox}});node(w);relation["social_facility"="outreach"]["social_facility:for"="refugee"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/symbols/amenity/social_facility.svg',
@@ -463,7 +463,7 @@ var config = {
 		},
 
 		{
-			group: 'Amenities/об\'єкта ',
+			group: 'Amenities/об\'єкта',
 			title: 'Food bank/продовольчий банк',
 			query: '(node["social_facility"="food_bank"]({{bbox}});node(w);way["social_facility"="food_bank"]({{bbox}});node(w);relation["social_facility"="food_bank"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/symbols/shop/greengrocer.svg',
@@ -500,7 +500,7 @@ var config = {
 			}
 		},
 		{
-			group: 'Amenities/об\'єкта ',
+			group: 'Amenities/об\'єкта',
 			title: 'Soup kitchen/супова кухня',
 			query: '(node["social_facility"="soup_kitchen"]({{bbox}});node(w);way["social_facility"="soup_kitchen"]({{bbox}});node(w);relation["social_facility"="soup_kitchen"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/symbols/amenity/cafe.svg',
@@ -537,7 +537,7 @@ var config = {
 			}
 		},
 		{
-			group: 'Amenities/об\'єкта ',
+			group: 'Amenities/об\'єкта',
 			title: 'Information points/Інформаційні пункти',
 			query: '(node["information:for"="refugee"]({{bbox}});node(w);way["information:for"="refugee"]({{bbox}});node(w);relation["information:for"="refugee"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/symbols/tourism/office.svg',
@@ -574,7 +574,7 @@ var config = {
 			}
 		},
 		{
-			group: 'Amenities/об\'єкта ',
+			group: 'Amenities/об\'єкта',
 			title: 'Pharmacy/Аптеки',
 			query: '(node["amenity"="pharmacy"]({{bbox}});node(w);way["amenity"="pharmacy"]({{bbox}});node(w);relation["amenity"="pharmacy"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/symbols/amenity/pharmacy.svg',
@@ -611,7 +611,7 @@ var config = {
 			}
 		},
 		{
-			group: 'Amenities/об\'єкта ',
+			group: 'Amenities/об\'єкта',
 			title: 'Hospital/Лікарні',
 			query: '(node["amenity"="hospital"]({{bbox}});node(w);way["amenity"="hospital"]({{bbox}});node(w);relation["amenity"="hospital"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/symbols/amenity/hospital.svg',
@@ -648,7 +648,7 @@ var config = {
 			}
 		},
 		{
-			group: 'Amenities/об\'єкта ',
+			group: 'Amenities/об\'єкта',
 			title: 'Doctors/Лікарі',
 			query: '(node["amenity"="doctors"]({{bbox}});node(w);way["amenity"="doctors"]({{bbox}});node(w);relation["amenity"="doctors"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/symbols/amenity/doctors.svg',
@@ -686,7 +686,7 @@ var config = {
 		},
 
 		{
-			group: 'Amenities/об\'єкта ',
+			group: 'Amenities/об\'єкта',
 			title: 'Consulates/консульства',
 			query: '(node["office"="diplomatic"]["country"="UA"]({{bbox}});node(w);way["office"="diplomatic"]["country"="UA"]({{bbox}});node(w);relation["office"="diplomatic"]["country"="UA"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/symbols/tourism/information.svg',
@@ -723,7 +723,7 @@ var config = {
 			}
     },
 		{
-			group: 'Test',
+			group: 'Dopomoha data',
 			title: 'Dopomoha OSMData (visit <br><a href="https://www.dopomoha.pl">Dopomoha</a>',
 			geojson: 'https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/osm_data.geojson',
 			iconSrc: imgSrc + 'base/circle.svg',
@@ -934,7 +934,7 @@ var name = feature.get(name_key) || '';
 		 
  },
 		{
-			group: 'Test',
+			group: 'Dopomoha data',
 			title: 'Dopomoha Zbiorki',
 			geojson: 'https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/zbiorki.geojson',
 			iconSrc: imgSrc + 'base/circle.svg',
@@ -1101,7 +1101,7 @@ var name = feature.get(name_key) || '';
 		 
 		},
 		{
-			group: 'Name:uk',
+			group: 'Name:uk/українською мовою',
 			title: 'No UK data',
 			query: '(way[highway][!name:uk]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
