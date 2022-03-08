@@ -723,8 +723,8 @@ var config = {
 			}
     },
 		{
-			group: 'Dopomoha data',
-			title: 'Dopomoha OSMData (visit <br><a href="https://www.dopomoha.pl">Dopomoha</a>',
+			group: 'Dopomoha data<br> (from <a href="https://www.dopomoha.pl">Dopomoha</a>)',
+			title: 'Dopomoha OSMData<br> (from <a href="https://www.dopomoha.pl">Dopomoha</a>)',
 			geojson: 'https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/osm_data.geojson',
 			iconSrc: imgSrc + 'base/circle.svg',
 			iconStyle: 'background-color:#714601',
@@ -934,8 +934,8 @@ var name = feature.get(name_key) || '';
 		 
  },
 		{
-			group: 'Dopomoha data',
-			title: 'Dopomoha Zbiorki',
+			group: 'Dopomoha data<br> (from <a href="https://www.dopomoha.pl">Dopomoha</a>)',
+			title: 'Dopomoha Zbiorki<br> (from <a href="https://www.dopomoha.pl">Dopomoha</a>)',
 			geojson: 'https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/zbiorki.geojson',
 			iconSrc: imgSrc + 'base/circle.svg',
 			iconStyle: 'background-color:#714601',
