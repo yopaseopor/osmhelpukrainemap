@@ -888,7 +888,7 @@ var name = feature.get(name_key) || '';
 					'consulate': {
 						'yes': new ol.style.Style({
 							image: new ol.style.Icon({
-						scale: 0.4,
+						scale: 1,
 						src:  'https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/icones/symbols/tourism/information.svg'
 						}),
 							text: new ol.style.Text({
@@ -928,8 +928,8 @@ var name = feature.get(name_key) || '';
 					'social_facility': {
 						'outreach': new ol.style.Style({
 							image: new ol.style.Icon({
-						scale: 0.4,
-						src: 'https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/icones/symbols/amenity/social_facility.png'
+						scale: 1,
+						src: 'https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/icones/symbols/amenity/social_facility.svg'
 					}),
 							text: new ol.style.Text({
 								text: name,
@@ -941,7 +941,7 @@ var name = feature.get(name_key) || '';
 						}),
 						'soup_kitchen': new ol.style.Style({
 							image: new ol.style.Icon({
-						scale: 0.4,
+						scale: 1,
 						src:  'https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/icones/symbols/amenity/cafe.svg'
 					}),
 							text: new ol.style.Text({
@@ -954,7 +954,7 @@ var name = feature.get(name_key) || '';
 						}),
 						'food_bank': new ol.style.Style({
 							image: new ol.style.Icon({
-						scale: 0.4,
+						scale: 1,
 						src: 'https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/icones/symbols/shop/greengrocer.svg'
 					}),
 							text: new ol.style.Text({
