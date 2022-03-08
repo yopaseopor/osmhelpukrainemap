@@ -929,7 +929,7 @@ var name = feature.get(name_key) || '';
 						'outreach': new ol.style.Style({
 							image: new ol.style.Icon({
 						scale: 0.4,
-						src: 'https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/icones/symbols/amenity/social_facility.svg'
+						src: 'https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/icones/symbols/amenity/social_facility.png'
 					}),
 							text: new ol.style.Text({
 								text: name,
