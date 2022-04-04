@@ -575,6 +575,43 @@ var config = {
 		},
 		{
 			group: 'Amenities/об\'єкта',
+			title: 'Government offices/Державні установи',
+			query: '(node[government=administrative][admin_level]({{bbox}});node(w);way[government=administrative][admin_level]({{bbox}});node(w);relation[government=administrative][admin_level]({{bbox}});node(w););out meta;',
+			iconSrc: imgSrc + 'icones/symbols/office/government.svg',
+			iconStyle: 'background-color:#ffFFFF',
+			style: function (feature) {
+				var key_regex = /^name:uk$/
+				var name_key = feature.getKeys().filter(function(t){return t.match(key_regex)}).pop() || "name"
+				var name = feature.get(name_key) || '';
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+
+				var stroke = new ol.style.Stroke({
+					color: '#ff0000',
+					width: 0.5
+				});
+				var style = new ol.style.Style({
+					image: new ol.style.Circle({
+						fill: fill,
+						stroke: stroke,
+						radius: 5
+					}),
+							text: new ol.style.Text({
+								text: name,
+								color: 'rgba(0,128,0,0.4)',
+								font: '14px Verdana',
+								offsetX : 0,
+								offsetY : 30
+							}),
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Amenities/об\'єкта',
 			title: 'Pharmacy/Аптеки',
 			query: '(node["amenity"="pharmacy"]({{bbox}});node(w);way["amenity"="pharmacy"]({{bbox}});node(w);relation["amenity"="pharmacy"]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'icones/symbols/amenity/pharmacy.svg',
