@@ -688,7 +688,7 @@ var config = {
 			group: 'Amenities/об\'єкта',
 			title: 'Train station/Залізнична станція',
 			query: '(node[building=train_station]({{bbox}});node(w);way[building=train_station]({{bbox}});node(w);relation[building=train_station]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'icones/symbols/highway/train_station.svg',
+			iconSrc: imgSrc + 'icones/symbols/highway/railway_station.svg',
 			iconStyle: 'background-color:#ffFFFF',
 			style: function (feature) {
 				var key_regex = /^name:uk$/
